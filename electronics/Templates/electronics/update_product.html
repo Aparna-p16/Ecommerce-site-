@@ -1,0 +1,8 @@
+<!------update_product.html------->
+
+<h2>Update Product</h2>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}          <!----django templating tool--> <!--render the form fields-->
+    <button type="submit">SAVE CHANGES</button>
+</form>
